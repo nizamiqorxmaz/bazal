@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <div class="left">
+        <div class="left-content">
+            <h2 class="header">Məlumatları daxil edin!</h2>
+            <div class="form">
+                <div class="label-area">
+                    <label class="label" for="height">Boy</label>
+                    <label class="label" for="weight">Çəki</label>
+                    <label class="label" for="age">Yaş</label>
+                </div>
+                <div class="input-area">
+                    <input class='input' type="number" id="h" name="height" placeholder="175 sm" min="55" max="250"> 
+                    <input class='input' type="number" id="w" name="weight" placeholder="64 kg" min="30" max="500"> 
+                    <input class='input' type="number" id="a" name="age" placeholder="23" min="0" max="150">
+                </div>
+                <h2 class="header-secondary">Həyat tərzi</h2>
+                <div class="activity">
+                    <div class="iw"><input class="radio" type="radio" name="activity" id="passive" value="1.2" checked="checked"> 
+                    <label class="activity-label" for="passive">Passiv</label></div>
+                    <div class="iw"><input class="radio" type="radio" name="activity" id="sit" value="1.4"> 
+                    <label class="activity-label" for="sit">Orta Aktiv</label></div>
+                    <div class="iw"><input class="radio" type="radio" name="activity" id="student" value="1.5"> 
+                    <label class="activity-label" for="student">Orta</label></div>
+                </div>
+                <div class="activity">
+                    <div class="iw"><input class="radio" type="radio" name="activity" id="evdar" value="1.6"> 
+                    <label class="activity-label" for="evdar">Aktiv</label></div>
+                    <div class="iw"><input class="radio" type="radio" name="activity" id="hard" value="1.8"> 
+                    <label class="activity-label" for="hard">Hiperaktiv</label></div>    
+                </div>
+                <h2 class="header-secondary">Cinsiniz:</h2>
+                <div class="gender">
+                    <div class="iw2"><input class="radio" type="radio" name="gender" id="male" value="2" checked="checked"> 
+                    <label class="activity-label" for="male">Kişi</label></div>
+                    <div class="iw2"><input class="radio" type="radio" name="gender" id="female" value="3"> 
+                    <label class="activity-label" for="female">Qadın</label>
+                    </div>
+            </div>
+
+            <button class="btn" type="submit" onclick=" calculate()">Hesabla</button>  
+            
+            </div>
+        </div>
+    </div>
+        <div class="right"><div class="right-content">
+            <h2 class="header">Nəticə:</h2>
+            <h2 class="header-secondary">BAZAL METABOLİZMA SÜRƏTİ</h2>
+            <div class="kkal"><p class="result" id="result">0 kkal</p></div>
+            <div class="extra">
+                <div class="bmi"><p class="bmi-result" id="bmi-result">Bədən Kütlə İndeksi:</p></div>
+                <div class="bmi"><p class="bmi-result" id="weight-status">Çəki Statusu:</p></div>
+            </div>
+        
+        </div>
+    </div>
+    <script src="calculate.js"></script>
+     
+    
+</body>
+</html>
